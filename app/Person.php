@@ -13,13 +13,13 @@ class Person extends Model
     
 
     public function aliases() {
-        $this->hasMany(Alias::class);
+        return $this->hasMany(Alias::class);
     }
 
     public function image() {
-        $this->hasOne(Image::class);
+        return $this->hasOne(Image::class, 'id', 'img_id');
     }
     public function status() {
-        $this->hasOne(Status::class);
+        return $this->hasOne(Status::class);
     }
 }
