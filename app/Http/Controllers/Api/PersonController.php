@@ -13,6 +13,7 @@ class PersonController extends Controller
             ->orderBy('name','asc')
             ->with('image')
             ->get();
-            return($records);
+        
+        return $records;
     } 
 }

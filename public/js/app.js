@@ -32130,35 +32130,36 @@ function (_React$Component) {
         <div>loading</div>
     )
     if (!this.state.loading && this.state.loaded) {
-         let list_items = [];
+             let list_items = [];
         for (let item of this.state.data) {
             list_items.push((
                 <li>
-                    { item.name }
+                    { item.name }                            
                     <div className="rating">{ item.rating.toFixed(1) }</div>
                 </li>
             ))
         }
-         content = (
+             content = (
             <>
                 <ul>
                     {
                         this.state.data.map((item) => (
                             <li>
-                                { item.name }
+                                { item.name }                            
                                 <div className="rating">{ item.rating.toFixed(1) }</div>
                             </li>
-                        ))
+                        )) 
                     }
                 </ul>
             </>
         )
     }
-     return (
+    
+    return (
         <section className="top-rated">
-             <h2>Top rated movies & shows</h2>
-             { content }
-         </section>
+                 <h2>Top rated movies & shows</h2>
+                 { content }
+             </section>
     );
 }
 */
@@ -32207,8 +32208,8 @@ react_dom__WEBPACK_IMPORTED_MODULE_1___default.a.render(react__WEBPACK_IMPORTED_
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /Users/LACI/Web/laravel-mi6-asset-db/resources/js/app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! /Users/LACI/Web/laravel-mi6-asset-db/resources/sass/app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! /Users/martinchalupa/Web/laravel_react_practice/resources/js/app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! /Users/martinchalupa/Web/laravel_react_practice/resources/sass/app.scss */"./resources/sass/app.scss");
 
 
 /***/ })
