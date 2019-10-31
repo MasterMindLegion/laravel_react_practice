@@ -12,6 +12,7 @@ class PersonController extends Controller
         $records = Person::limit(20)
             ->orderBy('name','asc')
             ->get();
-            dd($records);
+        
+        return $records;
     } 
 }
