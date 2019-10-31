@@ -32068,7 +32068,7 @@ function (_React$Component) {
       loaded: false,
       data: []
     };
-    _this.url = 'http://www.mi6.test/api/person';
+    _this.url = 'http://www.mi6.test:8080/api/person';
     return _this;
   }
 
@@ -32122,7 +32122,7 @@ function (_React$Component) {
   return PeopleList;
 }(react__WEBPACK_IMPORTED_MODULE_0___default.a.Component);
 /* render() {
-      let content = (
+     let content = (
          <div className="message">
             <div className="loader"><div></div><div></div><div></div><div></div></div>
             Loading
@@ -32130,7 +32130,7 @@ function (_React$Component) {
         <div>loading</div>
     )
     if (!this.state.loading && this.state.loaded) {
-              let list_items = [];
+             let list_items = [];
         for (let item of this.state.data) {
             list_items.push((
                 <li>
@@ -32139,7 +32139,7 @@ function (_React$Component) {
                 </li>
             ))
         }
-              content = (
+             content = (
             <>
                 <ul>
                     {
@@ -32157,9 +32157,9 @@ function (_React$Component) {
     
     return (
         <section className="top-rated">
-                  <h2>Top rated movies & shows</h2>
-                  { content }
-              </section>
+                 <h2>Top rated movies & shows</h2>
+                 { content }
+             </section>
     );
 }
 */
@@ -32208,8 +32208,8 @@ react_dom__WEBPACK_IMPORTED_MODULE_1___default.a.render(react__WEBPACK_IMPORTED_
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! C:\web\bootcamp\hackathons\laravel-mi6-asset-db\resources\js\app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! C:\web\bootcamp\hackathons\laravel-mi6-asset-db\resources\sass\app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! /Users/martinchalupa/Web/laravel_react_practice/resources/js/app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! /Users/martinchalupa/Web/laravel_react_practice/resources/sass/app.scss */"./resources/sass/app.scss");
 
 
 /***/ })
