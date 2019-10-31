@@ -10,7 +10,7 @@ export default class PeopleList extends React.Component {
             data: []
         };
 
-        this.url = 'http://www.mi6.test:8080/api/person';
+        this.url = 'http://www.mi6.test/api/person';
     }
 
         componentDidMount() {
