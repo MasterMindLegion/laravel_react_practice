@@ -20,16 +20,16 @@ export default class PeopleList extends React.Component {
 
         loadData() {
             if (this.url) {
-                this.setState({ 
+                this.setState({
                     loading: true,
                     loaded: false,
                     data: []
                 })
-    
+
                 fetch(this.url)
                     .then(response => response.json())
                     .then(data => {
-                            this.setState({ 
+                            this.setState({
                             loaded: true,
                             data: data
                         })
@@ -48,10 +48,10 @@ export default class PeopleList extends React.Component {
                     return <div key={oneData.id}>{oneData.name}
                                 <img src={oneData.image.url}></img>
                             </div>
-                         
+
                 });
             }
-        
+
         return(
             <div>{show}</div>
         )
@@ -91,40 +91,40 @@ export default class PeopleList extends React.Component {
                 <div>loading</div>
             )
             if (!this.state.loading && this.state.loaded) {
-    
+
                 let list_items = [];
                 for (let item of this.state.data) {
                     list_items.push((
                         <li>
-                            { item.name }                            
+                            { item.name }
                             <div className="rating">{ item.rating.toFixed(1) }</div>
                         </li>
                     ))
                 }
-    
+
                 content = (
                     <>
                         <ul>
                             {
                                 this.state.data.map((item) => (
                                     <li>
-                                        { item.name }                            
+                                        { item.name }
                                         <div className="rating">{ item.rating.toFixed(1) }</div>
                                     </li>
-                                )) 
+                                ))
                             }
                         </ul>
                     </>
                 )
             }
-            
+
             return (
                 <section className="top-rated">
-    
+
                     <h2>Top rated movies & shows</h2>
-    
+
                     { content }
-    
+
                 </section>
             );
         }
@@ -132,4 +132,3 @@ export default class PeopleList extends React.Component {
 
  */
 
-    
